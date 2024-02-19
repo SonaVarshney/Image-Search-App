@@ -1,4 +1,4 @@
-const accessKey = "hdJBKiwV4zRF6LmWruG21AKkOjEx6aIkMOjE9kg93cE";
+
 
 const formElement = document.querySelector("form");
 const inputElement = document.querySelector("input");
