@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Image Search App</h1>
+    <form action="">
+      <input type="text" id="search-input" placeholder="Search for images" />
+      <!-- <input type="submit" id="search-button" value="Search" /> -->
+      <button id="search-button">Search</button>
+    </form>
+
+    <div class="search-results">
+      <!-- 3 images hongi show by default -->
+      <div class="search-result">
+        <img
+          src="https://images.unsplash.com/photo-1705323111650-4297b5cad135?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Tokyo's Local market"
+        />
+        <!-- target=_blank means open in a new tab -->
+        <a
+          href="https://unsplash.com/photos/a-city-street-at-night-with-people-walking-on-it-aBVzRk1CWx8"
+          target="_blank"
+          >Tokyo's Local market</a
+        >
+      </div>
+      <div class="search-result">
+        <img
+          src="https://images.unsplash.com/photo-1705374176491-46507ded8f6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1MHx8fGVufDB8fHx8fA%3D%3D"
+          alt="City Lights"
+        />
+        <!-- target=_blank means open in a new tab -->
+        <a
+          href="https://unsplash.com/photos/a-city-skyline-with-a-ferris-wheel-in-the-foreground-vipGdiUsgXA"
+          target="_blank"
+          >City Lights</a
+        >
+      </div>
+      <div class="search-result">
+        <img
+          src="https://images.unsplash.com/photo-1702165640949-6c909e75c9d8?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Tokyo's Local market"
+        />
+        <!-- target=_blank means open in a new tab -->
+        <a
+          href="https://unsplash.com/photos/a-city-street-at-night-with-people-walking-on-it-aBVzRk1CWx8"
+          target="_blank"
+          >Flowers</a
+        >
+      </div>
+    </div>
+    <button id="show-more-button">Show More</button>
+  </body>
+  <script src="script.js"></script>
+</html>

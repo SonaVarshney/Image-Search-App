@@ -1,0 +1,146 @@
+
+/* select kaun kaunse chahiye from a specific font family and fir import karlo*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@100&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* these three also copied from css rules */
+    /* font-family: 'Caveat', cursive;
+    font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    line-height: 1.6; /*for our text*/  
+}
+
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align:center;
+    margin: 40px 0 60px 0;
+    /*TRBL*/
+}
+
+form{
+    display:flex;
+    justify-content: center;/*horizontal*/
+    align-items: center; /*vertical*/
+    margin-bottom:60px
+}
+
+#search-input{
+    width:60%;
+    max-width:400px;
+    /**This is useful for preventing the input from becoming excessively wide on larger screens, maintaining a reasonable and readable width.*/
+    padding:10px 20px;
+    /*Top and Bottom Padding: 10 pixels
+    Right and Left Padding: 20 pixels*/
+
+    border:none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    border: radius 5px;
+    font-size: 18px;
+    color:#333
+}
+
+#search-button{
+    padding: 10px 20px;
+    background-color: #138065;
+    color: #fff;
+    border:none;
+    font-size:18px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    cursor:pointer;
+    border-radius:5px;
+    margin-left:10px 
+
+}
+
+.search-results{
+    display:flex;
+    justify-content: space-between;  /*ek line mein teeno with space*/
+    flex-wrap:wrap; /*next line mein aaye*/
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.search-result{
+    margin-bottom: 60px;
+    width:30%;
+    height: 100%;
+    border-radius:5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    overflow: hidden;  /*jo bhi container se bahar jaa raha chhupa do*/
+}
+
+
+.search-result img{
+    width:100%;
+    height:200px;
+    object-fit: cover;
+    /*These properties set the width and height of the targeted <img> elements to be 100% of their containing element's width and height.*/
+    transition: opacity 0.2s ease-in-out;  /*smooth transition*/
+}
+
+.search-result:hover img{
+    opacity:0.8;
+
+}
+
+.search-result a{
+    font-size:20px;
+    text-decoration: none;  /*removes underline from the link*/
+    color:#333;
+    display:block; /*Block-level elements typically start on a new line and take up the full width available to them, extending horizontally to fill their container. They also stack on top of each other in the document flow.*/
+    padding: 10px;
+    text-transform: capitalize; /*capitalizes the first letter of each word*/
+}
+
+
+#show-more-button{
+    background-color: #088cba;
+    font-size: 18px;
+    border:none;
+    color:#fff;
+    padding:10px 20px;
+    text-align:center;
+    display: block;
+    margin: 30px auto;
+    /*
+    In the case of margin: 30px auto;, it means:
+    Top Margin: 30 pixels
+    Right Margin: Automatically determined by the browser (auto)
+    Bottom Margin: 30 pixels
+    Left Margin: Automatically determined by the browser (auto)*/
+    border-radius:5px;
+    cursor:pointer;
+     display:none; /* -> The CSS property display is used to control the visibility and layout of an element. When you set display: none;, it means that the element will be hidden, and it won't take up any space in the layout*/
+
+}
+
+/* 768 px is tablet size */
+
+@media screen and (max-width:768px){
+    .search-results{
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .search-result{
+        width: 80%;
+    }
+}
+
+
+/* @media screen and (max-width:480px){
+
+    .search-result{
+        width: 100%;
+    }
+} */
+
+
